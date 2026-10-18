@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MedSeg 医学影像智能分割平台">
+  <title>MedSeg · 医学影像智能分割</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#" aria-label="MedSeg 首页">
+      <span class="brand-mark"><i></i><i></i></span>
+      <span><b>MedSeg</b><small>医学影像智能分割</small></span>
+    </a>
+    <span class="header-note"><i></i> RESEARCH WORKSPACE</span>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-backdrop" aria-hidden="true">
+        <img class="anatomy-foreground" src="./assets/anatomy-accent.webp" alt="">
+        <div class="anatomy-scan"></div>
+        <i class="depth-glow depth-glow-one"></i>
+        <i class="depth-glow depth-glow-two"></i>
+        <div class="depth-grid"></div>
+        <div class="depth-particles"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> CLINICAL IMAGE INTELLIGENCE</span>
+        <h1>让每一层医学影像<br><em>清晰可见，精确可量。</em></h1>
+        <p>面向医学研究与影像分析的交互式分割展示平台。选择一张医学图像，即可体验从影像导入到分割结果生成的完整流程。</p>
+        <div class="hero-actions">
+          <button class="hero-upload" id="heroUpload">选择影像数据 <span>→</span></button>
+          <div class="capability-tags" aria-label="平台能力">
+            <span>三类数据集</span><span>分割可视化</span><span>结果下载</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-readout" aria-hidden="true">
+        <span><i></i>RESEARCH WORKSPACE</span>
+        <b>4-MODAL MRI</b>
+        <small>DE-IDENTIFIED DATA ONLY</small>
+      </div>
+      <div class="hero-edge-label" aria-hidden="true">MEDSEG / VISUAL AI</div>
+    </section>
+
+    <section class="workspace" aria-labelledby="workspaceTitle">
+      <div class="workspace-head">
+        <div><span>SEGMENTATION WORKSPACE</span><h2 id="workspaceTitle">开始一次影像分析</h2></div>
+        <div class="workspace-meta">
+          <div class="workflow-rail" id="workflowRail" aria-label="分析流程">
+            <span class="active" data-step="upload"><b>01</b>选图</span><i></i>
+            <span data-step="analyze"><b>02</b>分析</span><i></i>
+            <span data-step="result"><b>03</b>结果</span>
+          </div>
+          <div class="service-state ready" id="serviceState" role="status"><i></i><span>演示模式已就绪</span></div>
+        </div>
+      </div>
+
+      <div class="workflow-grid">
+        <section class="panel upload-panel">
+          <div class="panel-index">01</div>
+          <div class="panel-title"><div><span>DATASET</span><h3>选择数据类别</h3></div><small>三类医学影像数据集</small></div>
+
+          <div class="dataset-picker" id="datasetPicker" aria-label="数据类别选择">
+            <button class="active" type="button" data-category="大脑">
+              <img src="./assets/dataset-brain-cover.webp" alt="" loading="lazy"><span class="dataset-code">BR</span><span><b>大脑</b><small>Brain Tumor MRI</small></span><i>01</i>
+            </button>
+            <button type="button" data-category="心脏">
+              <img src="./assets/dataset-heart-cover.webp" alt="" loading="lazy"><span class="dataset-code">HT</span><span><b>心脏</b><small>Cardiac MRI</small></span><i>02</i>
+            </button>
+            <button type="button" data-category="前列腺">
+              <img src="./assets/dataset-prostate-cover.webp" alt="" loading="lazy"><span class="dataset-code">PR</span><span><b>前列腺</b><small>Prostate MRI</small></span><i>03</i>
+            </button>
+          </div>
+          <p class="dataset-label"><i></i>类别选择：大脑 / 心脏 / 前列腺</p>
+
+          <div class="library-pane" id="libraryPane">
+            <div class="library-toolbar single">
+              <label class="library-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg><input id="librarySearch" type="search" placeholder="在当前类别中搜索序号或名称"></label>
+            </div>
+            <div class="library-caption"><span id="libraryCount">正在载入大脑数据…</span><small>选择下方具体图像</small></div>
+            <div class="library-grid" id="libraryGrid" aria-live="polite"></div>
+            <div class="library-footer">
+              <div class="library-selection" id="librarySelection"><i></i><span>请选择一张具体图像</span></div>
+              <nav class="library-pagination" aria-label="素材库分页">
+                <button id="libraryPrev" aria-label="上一页">←</button><span id="libraryPage">1 / 1</span><button id="libraryNext" aria-label="下一页">→</button>
+              </nav>
+            </div>
+          </div>
+
+          <button class="analyze-button" id="runModel" disabled>
+            <span class="button-icon"><svg viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7z"/></svg></span>
+            <span><b>开始分割演示</b><small id="runModelHint">请先选择一张图片</small></span>
+            <i>→</i>
+          </button>
+
+          <div class="progress" id="runProgress">
+            <div><span id="progressText">等待提交</span><b id="progressValue">0%</b></div>
+            <i><em id="progressBar"></em></i>
+          </div>
+          <p class="privacy"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.8 2.8 8 7 10 4.2-2 7-5.2 7-10V6zM9 12l2 2 4-5"/></svg>示例影像仅用于科研流程展示</p>
+        </section>
+
+        <section class="panel result-panel">
+          <div class="panel-index">02</div>
+          <div class="panel-title"><div><span>RESULT</span><h3>分割结果</h3></div><small id="resultStatus">等待分析</small></div>
+
+          <div class="result-empty" id="resultEmpty">
+            <div class="empty-visual"><i></i><i></i><span></span></div>
+            <div class="demo-loader" aria-hidden="true"><i></i><span id="demoCountdown">5.0</span></div>
+            <b id="emptyTitle">结果将在这里显示</b>
+            <p id="emptyCopy">选择图片并开始演示，5 秒后将展示预先准备的分割结果。</p>
+          </div>
+
+          <div class="result-content" id="resultContent">
+            <div class="demo-result-frame">
+              <img id="demoResult" src="./assets/demo-segmentation-result.webp" alt="合成脑部 MRI 分割演示结果">
+              <span><i></i> <b id="resultLabel">DEMO RESULT</b></span>
+            </div>
+            <div class="metrics">
+              <div><span id="metricLabel1">全肿瘤区域</span><b id="metricValue1">86.42 mL</b></div>
+              <div><span id="metricLabel2">肿瘤核心</span><b id="metricValue2">34.18 mL</b></div>
+              <div><span id="metricLabel3">增强区域</span><b id="metricValue3">12.76 mL</b></div>
+            </div>
+            <p class="demo-disclaimer">演示数据与数值均为合成内容，仅用于展示交互流程。</p>
+            <button class="download-button" id="exportResult"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>下载演示结果</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer><span>MedSeg Research Platform</span><p>自动分割结果仅供科研与辅助分析，必须由专业人员复核，不可单独用于临床诊断。</p></footer>
+  </main>
+
+  <div class="toast" id="toast" role="status"><span>✓</span><div><b>操作完成</b><small>结果已更新</small></div></div>
+  <script src="./app.js"></script>
+</body>
+</html>

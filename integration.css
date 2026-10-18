@@ -1,0 +1,52 @@
+.api-state {
+  margin-top: 9px;
+  padding: 7px 8px;
+  border: 1px solid #323c45;
+  border-radius: 3px;
+  background: #171e24;
+  color: #8f9aa4;
+  font-size: 7px;
+  line-height: 1.45;
+}
+
+.api-state.ready {
+  border-color: #295a49;
+  background: #14231e;
+  color: #67b797;
+}
+
+.api-state.error {
+  border-color: #63373b;
+  background: #28191b;
+  color: #df848b;
+}
+
+.upload-selection {
+  display: none;
+  max-height: 110px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  overflow: auto;
+  border: 1px solid #dce2e7;
+  border-radius: 5px;
+  background: #f8fafb;
+  color: #596674;
+  font-size: 9px;
+  line-height: 1.65;
+}
+
+.upload-selection.show {
+  display: block;
+}
+
+.upload-selection b {
+  display: block;
+  margin-bottom: 3px;
+  color: #263443;
+}
+
+.upload-selection.error {
+  border-color: #e4b9bc;
+  background: #fff6f6;
+  color: #a4474e;
+}
