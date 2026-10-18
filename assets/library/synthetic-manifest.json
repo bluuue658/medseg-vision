@@ -1,0 +1,72 @@
+[
+  {
+    "id": "prostate-synthetic-011",
+    "title": "合成前列腺样本 011",
+    "code": "SYNTHETIC · PROSTATE · 011",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-synthetic-011.webp",
+    "thumbnail": "./assets/library/inputs/prostate-synthetic-011.webp",
+    "result": "./assets/library/results/prostate-synthetic-011-result.webp",
+    "metrics": [
+      { "label": "样本性质", "value": "合成影像" },
+      { "label": "分割状态", "value": "模拟结果" },
+      { "label": "用途", "value": "界面演示" }
+    ]
+  },
+  {
+    "id": "prostate-synthetic-012",
+    "title": "合成前列腺样本 012",
+    "code": "SYNTHETIC · PROSTATE · 012",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-synthetic-012.webp",
+    "thumbnail": "./assets/library/inputs/prostate-synthetic-012.webp",
+    "result": "./assets/library/results/prostate-synthetic-012-result.webp",
+    "metrics": [
+      { "label": "样本性质", "value": "合成影像" },
+      { "label": "分割状态", "value": "模拟结果" },
+      { "label": "用途", "value": "界面演示" }
+    ]
+  },
+  {
+    "id": "prostate-synthetic-013",
+    "title": "合成前列腺样本 013",
+    "code": "SYNTHETIC · PROSTATE · 013",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-synthetic-013.webp",
+    "thumbnail": "./assets/library/inputs/prostate-synthetic-013.webp",
+    "result": "./assets/library/results/prostate-synthetic-013-result.webp",
+    "metrics": [
+      { "label": "样本性质", "value": "合成影像" },
+      { "label": "分割状态", "value": "模拟结果" },
+      { "label": "用途", "value": "界面演示" }
+    ]
+  },
+  {
+    "id": "prostate-synthetic-014",
+    "title": "合成前列腺样本 014",
+    "code": "SYNTHETIC · PROSTATE · 014",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-synthetic-014.webp",
+    "thumbnail": "./assets/library/inputs/prostate-synthetic-014.webp",
+    "result": "./assets/library/results/prostate-synthetic-014-result.webp",
+    "metrics": [
+      { "label": "样本性质", "value": "合成影像" },
+      { "label": "分割状态", "value": "模拟结果" },
+      { "label": "用途", "value": "界面演示" }
+    ]
+  },
+  {
+    "id": "prostate-synthetic-015",
+    "title": "合成前列腺样本 015",
+    "code": "SYNTHETIC · PROSTATE · 015",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-synthetic-015.webp",
+    "thumbnail": "./assets/library/inputs/prostate-synthetic-015.webp",
+    "result": "./assets/library/results/prostate-synthetic-015-result.webp",
+    "metrics": [
+      { "label": "样本性质", "value": "合成影像" },
+      { "label": "分割状态", "value": "模拟结果" },
+      { "label": "用途", "value": "界面演示" }
+    ]
+  }
+]

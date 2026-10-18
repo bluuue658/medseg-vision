@@ -120,10 +120,17 @@ function renderLibrary() {
 
 async function loadLibrary() {
   try {
-    const response = await fetch("./assets/library/manifest.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("manifest unavailable");
-    const data = await response.json();
-    libraryItems = Array.isArray(data) ? data : [];
+    const [baseResponse, syntheticResponse] = await Promise.all([
+      fetch("./assets/library/manifest.json", { cache: "no-store" }),
+      fetch("./assets/library/synthetic-manifest.json", { cache: "no-store" })
+    ]);
+    if (!baseResponse.ok) throw new Error("manifest unavailable");
+    const baseData = await baseResponse.json();
+    const syntheticData = syntheticResponse.ok ? await syntheticResponse.json() : [];
+    libraryItems = [
+      ...(Array.isArray(baseData) ? baseData : []),
+      ...(Array.isArray(syntheticData) ? syntheticData : [])
+    ];
   } catch (error) {
     libraryItems = [];
   }
