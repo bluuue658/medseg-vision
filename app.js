@@ -33,7 +33,7 @@ function resetResult() {
   $("#resultContent").classList.remove("show");
   $("#resultEmpty").classList.remove("hide", "processing");
   $("#emptyTitle").textContent = "结果将在这里显示";
-  $("#emptyCopy").textContent = "选择具体图像并开始演示，5 秒后将展示预先准备的结果。";
+  $("#emptyCopy").textContent = "选择具体图像并开始分析，系统将自动展示预设分割结果。";
   $("#resultStatus").textContent = selectedSource ? "图像已就绪" : "等待选择";
   $("#runProgress").classList.remove("show");
   updateProgress(0, "等待开始");
@@ -184,8 +184,6 @@ function runDemo() {
   const animate = (now) => {
     const elapsed = Math.min(DEMO_DURATION_MS, now - startedAt);
     const progress = (elapsed / DEMO_DURATION_MS) * 100;
-    const remaining = Math.max(0, (DEMO_DURATION_MS - elapsed) / 1000);
-    $("#demoCountdown").textContent = remaining.toFixed(1);
     updateProgress(progress, stageForProgress(progress));
     if (elapsed < DEMO_DURATION_MS) requestAnimationFrame(animate);
     else completeDemo();
