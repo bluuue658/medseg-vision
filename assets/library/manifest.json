@@ -138,6 +138,190 @@
     ]
   },
   {
+    "id": "heart-la-003",
+    "title": "LA · 心脏样本 003",
+    "code": "LA · HEART · 003",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-003.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-003.webp",
+    "result": "./assets/library/results/heart-la-003-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "233.6 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.900"
+      },
+      {
+        "label": "IoU",
+        "value": "0.819"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-004",
+    "title": "LA · 心脏样本 004",
+    "code": "LA · HEART · 004",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-004.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-004.webp",
+    "result": "./assets/library/results/heart-la-004-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "229.0 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.908"
+      },
+      {
+        "label": "IoU",
+        "value": "0.831"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-005",
+    "title": "LA · 心脏样本 005",
+    "code": "LA · HEART · 005",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-005.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-005.webp",
+    "result": "./assets/library/results/heart-la-005-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "104.2 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.916"
+      },
+      {
+        "label": "IoU",
+        "value": "0.844"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-006",
+    "title": "LA · 心脏样本 006",
+    "code": "LA · HEART · 006",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-006.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-006.webp",
+    "result": "./assets/library/results/heart-la-006-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "353.4 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.892"
+      },
+      {
+        "label": "IoU",
+        "value": "0.805"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-007",
+    "title": "LA · 心脏样本 007",
+    "code": "LA · HEART · 007",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-007.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-007.webp",
+    "result": "./assets/library/results/heart-la-007-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "199.1 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.926"
+      },
+      {
+        "label": "IoU",
+        "value": "0.862"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-008",
+    "title": "LA · 心脏样本 008",
+    "code": "LA · HEART · 008",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-008.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-008.webp",
+    "result": "./assets/library/results/heart-la-008-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "234.2 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.847"
+      },
+      {
+        "label": "IoU",
+        "value": "0.735"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-009",
+    "title": "LA · 心脏样本 009",
+    "code": "LA · HEART · 009",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-009.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-009.webp",
+    "result": "./assets/library/results/heart-la-009-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "274.1 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.932"
+      },
+      {
+        "label": "IoU",
+        "value": "0.873"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-010",
+    "title": "LA · 心脏样本 010",
+    "code": "LA · HEART · 010",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-010.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-010.webp",
+    "result": "./assets/library/results/heart-la-010-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "234.8 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.932"
+      },
+      {
+        "label": "IoU",
+        "value": "0.872"
+      }
+    ]
+  },
+  {
     "id": "prostate-promise12-001",
     "title": "PROMISE12 · 前列腺样本 001",
     "code": "PROMISE12 · PROSTATE · 001",
