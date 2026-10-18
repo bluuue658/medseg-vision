@@ -219,7 +219,8 @@ footer a:hover { color: #cfeef5; text-decoration-color: currentColor; }
   .anatomy-scan { width: 64%; opacity: .28; }
   .hero h1 { font-size: 34px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
-  .capability-tags { max-width: 280px; }
+  .capability-tags { width: 100%; max-width: none; flex-wrap: nowrap; gap: 6px; }
+  .capability-tags span { min-width: 0; flex: 1; padding: 8px 5px; font-size: 10px; text-align: center; white-space: nowrap; }
   .hero-edge-label { display: none; }
   .workspace { padding: 17px; border-radius: 15px; }
   .workspace-head { align-items: flex-start; flex-direction: column; gap: 14px; }
