@@ -157,8 +157,6 @@ main { max-width: 1360px; margin: 0 auto; padding: 32px 34px 26px; }
 .demo-loader:before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, transparent 0 18%, #78c3a8 42%, #4f89a6 70%, transparent 92%); animation: demo-spin 1.05s linear infinite; box-shadow: 0 0 38px rgba(83,177,156,.16); }
 .demo-loader:after { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(124,192,181,.16); border-radius: 50%; background: radial-gradient(circle, #102936 0 44%, #0b1d28 45% 100%); }
 .demo-loader i { width: 1px; height: 118px; position: absolute; z-index: 2; background: linear-gradient(transparent, rgba(121,204,183,.38), transparent); animation: demo-scan 1.8s ease-in-out infinite alternate; }
-.demo-loader span { position: relative; z-index: 3; color: #c9e8df; font: 600 20px ui-monospace, monospace; }
-.demo-loader span:after { content: "s"; margin-left: 2px; color: #6f9891; font-size: 8px; }
 .result-empty.processing .empty-visual { display: none; }
 .result-empty.processing .demo-loader { display: grid; }
 .result-content { display: none; }
@@ -390,3 +388,48 @@ footer { color: #607680; }
   .dataset-picker button small { font-size: 6px; }
   .dataset-picker button > i { display: none; }
 }
+/* Readability pass: keep the clinical hierarchy while making all interactive text legible. */
+.brand small { font-size: 11px; }
+.header-note { font-size: 10px; }
+.eyebrow { font-size: 11px; }
+.hero-copy > p { font-size: 16px; line-height: 1.85; }
+.workspace-head > div:first-child span,
+.panel-title span { font-size: 10px; }
+.panel-title > small { font-size: 12px; }
+.panel-title h3 { font-size: 20px; }
+.workflow-rail span { font-size: 15px; }
+.workflow-rail span b { font-size: 12px; }
+.service-state { font-size: 15px; }
+
+.dataset-code { font-size: 10px; }
+.dataset-picker button b { font-size: 16px; }
+.dataset-picker button small { font-size: 11px; }
+.dataset-picker button > i { font-size: 10px; }
+.dataset-label { font-size: 12px; }
+
+.library-search input,
+.library-toolbar select { font-size: 13px; }
+.library-caption { font-size: 12px; }
+.library-card-copy b { font-size: 12px; }
+.library-card-copy small { font-size: 10px; }
+.library-empty,
+.library-selection { font-size: 12px; }
+.library-pagination span { font-size: 10px; }
+
+.analyze-button b { font-size: 16px; }
+.analyze-button small { font-size: 12px; }
+.progress > div,
+.privacy { font-size: 11px; }
+
+.result-empty b { font-size: 20px; }
+.result-empty p { max-width: 390px; font-size: 14px; line-height: 1.75; }
+.demo-result-frame > span { font-size: 10px; }
+.metrics span { font-size: 11px; }
+.metrics b { font-size: 16px; }
+.download-button { font-size: 13px; }
+.demo-disclaimer { font-size: 11px; line-height: 1.65; }
+
+footer,
+footer span { font-size: 11px; }
+.toast b { font-size: 13px; }
+.toast small { font-size: 11px; }
