@@ -8,37 +8,248 @@
     "thumbnail": "./assets/library/brain-mri-001.png",
     "result": "./assets/demo-segmentation-result.webp",
     "metrics": [
-      { "label": "全肿瘤区域", "value": "86.42 mL" },
-      { "label": "肿瘤核心", "value": "34.18 mL" },
-      { "label": "增强区域", "value": "12.76 mL" }
+      {
+        "label": "全肿瘤区域",
+        "value": "86.42 mL"
+      },
+      {
+        "label": "肿瘤核心",
+        "value": "34.18 mL"
+      },
+      {
+        "label": "增强区域",
+        "value": "12.76 mL"
+      }
     ]
   },
   {
-    "id": "heart-mri-001",
-    "title": "心脏 MRI · 样本 001",
-    "code": "HT · 001",
+    "id": "heart-acdc-001",
+    "title": "ACDC · 心脏样本 001",
+    "code": "ACDC · HEART · 001",
     "category": "心脏",
-    "input": "./assets/library/heart-mri-001.png",
-    "thumbnail": "./assets/library/heart-mri-001.png",
-    "result": "./assets/library/heart-mri-001.png",
+    "input": "./assets/library/inputs/heart-acdc-001.webp",
+    "thumbnail": "./assets/library/inputs/heart-acdc-001.webp",
+    "result": "./assets/library/results/heart-acdc-001-result.webp",
     "metrics": [
-      { "label": "目标区域", "value": "待导入" },
-      { "label": "分割体积", "value": "待导入" },
-      { "label": "置信度", "value": "待导入" }
+      {
+        "label": "左心室体积",
+        "value": "123.3 mL"
+      },
+      {
+        "label": "心肌体积",
+        "value": "85.2 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.935"
+      }
     ]
   },
   {
-    "id": "prostate-mri-001",
-    "title": "前列腺 MRI · 样本 001",
-    "code": "PR · 001",
-    "category": "前列腺",
-    "input": "./assets/library/prostate-mri-001.png",
-    "thumbnail": "./assets/library/prostate-mri-001.png",
-    "result": "./assets/library/prostate-mri-001.png",
+    "id": "heart-acdc-002",
+    "title": "ACDC · 心脏样本 002",
+    "code": "ACDC · HEART · 002",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-acdc-002.webp",
+    "thumbnail": "./assets/library/inputs/heart-acdc-002.webp",
+    "result": "./assets/library/results/heart-acdc-002-result.webp",
     "metrics": [
-      { "label": "目标区域", "value": "待导入" },
-      { "label": "分割体积", "value": "待导入" },
-      { "label": "置信度", "value": "待导入" }
+      {
+        "label": "左心室体积",
+        "value": "88.5 mL"
+      },
+      {
+        "label": "心肌体积",
+        "value": "82.9 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.951"
+      }
+    ]
+  },
+  {
+    "id": "heart-acdc-003",
+    "title": "ACDC · 心脏样本 003",
+    "code": "ACDC · HEART · 003",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-acdc-003.webp",
+    "thumbnail": "./assets/library/inputs/heart-acdc-003.webp",
+    "result": "./assets/library/results/heart-acdc-003-result.webp",
+    "metrics": [
+      {
+        "label": "左心室体积",
+        "value": "85.8 mL"
+      },
+      {
+        "label": "心肌体积",
+        "value": "66.8 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.958"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-001",
+    "title": "LA · 心脏样本 001",
+    "code": "LA · HEART · 001",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-001.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-001.webp",
+    "result": "./assets/library/results/heart-la-001-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "239.8 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.892"
+      },
+      {
+        "label": "IoU",
+        "value": "0.805"
+      }
+    ]
+  },
+  {
+    "id": "heart-la-002",
+    "title": "LA · 心脏样本 002",
+    "code": "LA · HEART · 002",
+    "category": "心脏",
+    "input": "./assets/library/inputs/heart-la-002.webp",
+    "thumbnail": "./assets/library/inputs/heart-la-002.webp",
+    "result": "./assets/library/results/heart-la-002-result.webp",
+    "metrics": [
+      {
+        "label": "左心房体积",
+        "value": "245.3 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.905"
+      },
+      {
+        "label": "IoU",
+        "value": "0.826"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-001",
+    "title": "PROMISE12 · 前列腺样本 001",
+    "code": "PROMISE12 · PROSTATE · 001",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-001.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-001.webp",
+    "result": "./assets/library/results/prostate-promise12-001-result.webp",
+    "metrics": [
+      {
+        "label": "前列腺体积",
+        "value": "69.2 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.865"
+      },
+      {
+        "label": "IoU",
+        "value": "0.761"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-002",
+    "title": "PROMISE12 · 前列腺样本 002",
+    "code": "PROMISE12 · PROSTATE · 002",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-002.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-002.webp",
+    "result": "./assets/library/results/prostate-promise12-002-result.webp",
+    "metrics": [
+      {
+        "label": "前列腺体积",
+        "value": "25.1 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.732"
+      },
+      {
+        "label": "IoU",
+        "value": "0.577"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-003",
+    "title": "PROMISE12 · 前列腺样本 003",
+    "code": "PROMISE12 · PROSTATE · 003",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-003.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-003.webp",
+    "result": "./assets/library/results/prostate-promise12-003-result.webp",
+    "metrics": [
+      {
+        "label": "前列腺体积",
+        "value": "33.9 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.729"
+      },
+      {
+        "label": "IoU",
+        "value": "0.574"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-004",
+    "title": "PROMISE12 · 前列腺样本 004",
+    "code": "PROMISE12 · PROSTATE · 004",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-004.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-004.webp",
+    "result": "./assets/library/results/prostate-promise12-004-result.webp",
+    "metrics": [
+      {
+        "label": "前列腺体积",
+        "value": "34.4 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.869"
+      },
+      {
+        "label": "IoU",
+        "value": "0.768"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-005",
+    "title": "PROMISE12 · 前列腺样本 005",
+    "code": "PROMISE12 · PROSTATE · 005",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-005.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-005.webp",
+    "result": "./assets/library/results/prostate-promise12-005-result.webp",
+    "metrics": [
+      {
+        "label": "前列腺体积",
+        "value": "55.3 mL"
+      },
+      {
+        "label": "Dice",
+        "value": "0.855"
+      },
+      {
+        "label": "IoU",
+        "value": "0.747"
+      }
     ]
   }
 ]
