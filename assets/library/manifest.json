@@ -323,7 +323,7 @@
   },
   {
     "id": "prostate-promise12-001",
-    "title": "PROMISE12 · 前列腺样本 001",
+    "title": "PROMISE12 样本 001",
     "code": "PROMISE12 · PROSTATE · 001",
     "category": "前列腺",
     "input": "./assets/library/inputs/prostate-promise12-001.webp",
@@ -331,22 +331,22 @@
     "result": "./assets/library/results/prostate-promise12-001-result.webp",
     "metrics": [
       {
-        "label": "前列腺体积",
-        "value": "69.2 mL"
+        "label": "数据来源",
+        "value": "PROMISE12"
       },
       {
-        "label": "Dice",
-        "value": "0.865"
+        "label": "样本性质",
+        "value": "脱敏真实影像"
       },
       {
-        "label": "IoU",
-        "value": "0.761"
+        "label": "分割结果",
+        "value": "模型预测"
       }
     ]
   },
   {
     "id": "prostate-promise12-002",
-    "title": "PROMISE12 · 前列腺样本 002",
+    "title": "PROMISE12 样本 002",
     "code": "PROMISE12 · PROSTATE · 002",
     "category": "前列腺",
     "input": "./assets/library/inputs/prostate-promise12-002.webp",
@@ -354,22 +354,22 @@
     "result": "./assets/library/results/prostate-promise12-002-result.webp",
     "metrics": [
       {
-        "label": "前列腺体积",
-        "value": "25.1 mL"
+        "label": "数据来源",
+        "value": "PROMISE12"
       },
       {
-        "label": "Dice",
-        "value": "0.732"
+        "label": "样本性质",
+        "value": "脱敏真实影像"
       },
       {
-        "label": "IoU",
-        "value": "0.577"
+        "label": "分割结果",
+        "value": "模型预测"
       }
     ]
   },
   {
     "id": "prostate-promise12-003",
-    "title": "PROMISE12 · 前列腺样本 003",
+    "title": "PROMISE12 样本 003",
     "code": "PROMISE12 · PROSTATE · 003",
     "category": "前列腺",
     "input": "./assets/library/inputs/prostate-promise12-003.webp",
@@ -377,22 +377,22 @@
     "result": "./assets/library/results/prostate-promise12-003-result.webp",
     "metrics": [
       {
-        "label": "前列腺体积",
-        "value": "33.9 mL"
+        "label": "数据来源",
+        "value": "PROMISE12"
       },
       {
-        "label": "Dice",
-        "value": "0.729"
+        "label": "样本性质",
+        "value": "脱敏真实影像"
       },
       {
-        "label": "IoU",
-        "value": "0.574"
+        "label": "分割结果",
+        "value": "模型预测"
       }
     ]
   },
   {
     "id": "prostate-promise12-004",
-    "title": "PROMISE12 · 前列腺样本 004",
+    "title": "PROMISE12 样本 004",
     "code": "PROMISE12 · PROSTATE · 004",
     "category": "前列腺",
     "input": "./assets/library/inputs/prostate-promise12-004.webp",
@@ -400,22 +400,22 @@
     "result": "./assets/library/results/prostate-promise12-004-result.webp",
     "metrics": [
       {
-        "label": "前列腺体积",
-        "value": "34.4 mL"
+        "label": "数据来源",
+        "value": "PROMISE12"
       },
       {
-        "label": "Dice",
-        "value": "0.869"
+        "label": "样本性质",
+        "value": "脱敏真实影像"
       },
       {
-        "label": "IoU",
-        "value": "0.768"
+        "label": "分割结果",
+        "value": "模型预测"
       }
     ]
   },
   {
     "id": "prostate-promise12-005",
-    "title": "PROMISE12 · 前列腺样本 005",
+    "title": "PROMISE12 样本 005",
     "code": "PROMISE12 · PROSTATE · 005",
     "category": "前列腺",
     "input": "./assets/library/inputs/prostate-promise12-005.webp",
@@ -423,16 +423,131 @@
     "result": "./assets/library/results/prostate-promise12-005-result.webp",
     "metrics": [
       {
-        "label": "前列腺体积",
-        "value": "55.3 mL"
+        "label": "数据来源",
+        "value": "PROMISE12"
       },
       {
-        "label": "Dice",
-        "value": "0.855"
+        "label": "样本性质",
+        "value": "脱敏真实影像"
       },
       {
-        "label": "IoU",
-        "value": "0.747"
+        "label": "分割结果",
+        "value": "模型预测"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-006",
+    "title": "PROMISE12 样本 006",
+    "code": "PROMISE12 · PROSTATE · 006",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-006.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-006.webp",
+    "result": "./assets/library/results/prostate-promise12-006-result.webp",
+    "metrics": [
+      {
+        "label": "数据来源",
+        "value": "PROMISE12"
+      },
+      {
+        "label": "样本性质",
+        "value": "脱敏真实影像"
+      },
+      {
+        "label": "分割结果",
+        "value": "模型预测"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-007",
+    "title": "PROMISE12 样本 007",
+    "code": "PROMISE12 · PROSTATE · 007",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-007.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-007.webp",
+    "result": "./assets/library/results/prostate-promise12-007-result.webp",
+    "metrics": [
+      {
+        "label": "数据来源",
+        "value": "PROMISE12"
+      },
+      {
+        "label": "样本性质",
+        "value": "脱敏真实影像"
+      },
+      {
+        "label": "分割结果",
+        "value": "模型预测"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-008",
+    "title": "PROMISE12 样本 008",
+    "code": "PROMISE12 · PROSTATE · 008",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-008.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-008.webp",
+    "result": "./assets/library/results/prostate-promise12-008-result.webp",
+    "metrics": [
+      {
+        "label": "数据来源",
+        "value": "PROMISE12"
+      },
+      {
+        "label": "样本性质",
+        "value": "脱敏真实影像"
+      },
+      {
+        "label": "分割结果",
+        "value": "模型预测"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-009",
+    "title": "PROMISE12 样本 009",
+    "code": "PROMISE12 · PROSTATE · 009",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-009.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-009.webp",
+    "result": "./assets/library/results/prostate-promise12-009-result.webp",
+    "metrics": [
+      {
+        "label": "数据来源",
+        "value": "PROMISE12"
+      },
+      {
+        "label": "样本性质",
+        "value": "脱敏真实影像"
+      },
+      {
+        "label": "分割结果",
+        "value": "模型预测"
+      }
+    ]
+  },
+  {
+    "id": "prostate-promise12-010",
+    "title": "PROMISE12 样本 010",
+    "code": "PROMISE12 · PROSTATE · 010",
+    "category": "前列腺",
+    "input": "./assets/library/inputs/prostate-promise12-010.webp",
+    "thumbnail": "./assets/library/inputs/prostate-promise12-010.webp",
+    "result": "./assets/library/results/prostate-promise12-010-result.webp",
+    "metrics": [
+      {
+        "label": "数据来源",
+        "value": "PROMISE12"
+      },
+      {
+        "label": "样本性质",
+        "value": "脱敏真实影像"
+      },
+      {
+        "label": "分割结果",
+        "value": "模型预测"
       }
     ]
   }
