@@ -331,16 +331,16 @@
     "result": "./assets/library/results/prostate-promise12-001-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "69.2 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.865"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.761"
       }
     ]
   },
@@ -354,16 +354,16 @@
     "result": "./assets/library/results/prostate-promise12-002-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "25.1 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.732"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.577"
       }
     ]
   },
@@ -377,16 +377,16 @@
     "result": "./assets/library/results/prostate-promise12-003-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "33.9 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.729"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.574"
       }
     ]
   },
@@ -400,16 +400,16 @@
     "result": "./assets/library/results/prostate-promise12-004-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "34.4 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.869"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.768"
       }
     ]
   },
@@ -423,16 +423,16 @@
     "result": "./assets/library/results/prostate-promise12-005-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "55.3 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.855"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.747"
       }
     ]
   },
@@ -446,16 +446,16 @@
     "result": "./assets/library/results/prostate-promise12-006-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "21.1 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.852"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.742"
       }
     ]
   },
@@ -469,16 +469,16 @@
     "result": "./assets/library/results/prostate-promise12-007-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "36.3 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.892"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.806"
       }
     ]
   },
@@ -492,16 +492,16 @@
     "result": "./assets/library/results/prostate-promise12-008-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "17.8 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.741"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.589"
       }
     ]
   },
@@ -515,16 +515,16 @@
     "result": "./assets/library/results/prostate-promise12-009-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "14.0 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.794"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.658"
       }
     ]
   },
@@ -538,16 +538,16 @@
     "result": "./assets/library/results/prostate-promise12-010-result.webp",
     "metrics": [
       {
-        "label": "数据来源",
-        "value": "PROMISE12"
+        "label": "前列腺体积",
+        "value": "21.5 mL"
       },
       {
-        "label": "样本性质",
-        "value": "脱敏真实影像"
+        "label": "Dice",
+        "value": "0.924"
       },
       {
-        "label": "分割结果",
-        "value": "模型预测"
+        "label": "IoU",
+        "value": "0.859"
       }
     ]
   }
