@@ -1,9 +1,9 @@
 const $ = (selector) => document.querySelector(selector);
 
 const DEMO_DURATION_MS = 5000;
-const DEFAULT_RESULT_URL = "./assets/demo-segmentation-result.webp";
+const DEFAULT_RESULT_URL = "./assets/library/results/heart-acdc-001-result.webp";
 const PAGE_SIZE = 6;
-let selectedCategory = "大脑";
+let selectedCategory = "心脏";
 let selectedSource = null;
 let running = false;
 let libraryItems = [];

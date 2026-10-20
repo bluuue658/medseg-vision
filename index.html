@@ -8,7 +8,7 @@
   <meta http-equiv="Expires" content="0">
   <meta name="description" content="MedSeg 医学影像智能分割平台">
   <title>MedSeg · 医学影像智能分割</title>
-  <link rel="stylesheet" href="./styles.css?v=20261020-2">
+  <link rel="stylesheet" href="./styles.css?v=20261020-3">
 </head>
 <body>
   <header class="masthead">
@@ -36,7 +36,7 @@
         <div class="hero-actions">
           <button class="hero-upload" id="heroUpload">选择影像数据 <span>→</span></button>
           <div class="capability-tags" aria-label="平台能力">
-            <span>三类数据集</span><span>分割可视化</span><span>结果下载</span>
+            <span>两类数据集</span><span>分割可视化</span><span>结果下载</span>
           </div>
         </div>
       </div>
@@ -59,26 +59,23 @@
       <div class="workflow-grid">
         <section class="panel upload-panel">
           <div class="panel-index">01</div>
-          <div class="panel-title"><div><span>DATASET</span><h3>选择数据类别</h3></div><small>三类医学影像数据集</small></div>
+          <div class="panel-title"><div><span>DATASET</span><h3>选择数据类别</h3></div><small>两类医学影像数据集</small></div>
 
           <div class="dataset-picker" id="datasetPicker" aria-label="数据类别选择">
-            <button class="active" type="button" data-category="大脑">
-              <img src="./assets/dataset-brain-cover.webp" alt="" loading="lazy"><span class="dataset-code">BR</span><span><b>大脑</b><small>Brain Tumor MRI</small></span><i>01</i>
-            </button>
-            <button type="button" data-category="心脏">
-              <img src="./assets/dataset-heart-cover.webp" alt="" loading="lazy"><span class="dataset-code">HT</span><span><b>心脏</b><small>Cardiac MRI</small></span><i>02</i>
+            <button class="active" type="button" data-category="心脏">
+              <img src="./assets/dataset-heart-cover.webp" alt="" loading="lazy"><span class="dataset-code">HT</span><span><b>心脏</b><small>Cardiac MRI</small></span><i>01</i>
             </button>
             <button type="button" data-category="前列腺">
-              <img src="./assets/dataset-prostate-cover.webp" alt="" loading="lazy"><span class="dataset-code">PR</span><span><b>前列腺</b><small>Prostate MRI</small></span><i>03</i>
+              <img src="./assets/dataset-prostate-cover.webp" alt="" loading="lazy"><span class="dataset-code">PR</span><span><b>前列腺</b><small>Prostate MRI</small></span><i>02</i>
             </button>
           </div>
-          <p class="dataset-label"><i></i>类别选择：大脑 / 心脏 / 前列腺</p>
+          <p class="dataset-label"><i></i>类别选择：心脏 / 前列腺</p>
 
           <div class="library-pane" id="libraryPane">
             <div class="library-toolbar single">
               <label class="library-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg><input id="librarySearch" type="search" placeholder="在当前类别中搜索序号或名称"></label>
             </div>
-            <div class="library-caption"><span id="libraryCount">正在载入大脑数据…</span><small>选择下方具体图像</small></div>
+            <div class="library-caption"><span id="libraryCount">正在载入心脏数据…</span><small>选择下方具体图像</small></div>
             <div class="library-grid" id="libraryGrid" aria-live="polite"></div>
             <div class="library-footer">
               <div class="library-selection" id="librarySelection"><i></i><span>请选择一张具体图像</span></div>
@@ -114,13 +111,13 @@
 
           <div class="result-content" id="resultContent">
             <div class="demo-result-frame">
-              <img id="demoResult" src="./assets/demo-segmentation-result.webp" alt="合成脑部 MRI 分割演示结果">
+              <img id="demoResult" src="./assets/library/results/heart-acdc-001-result.webp" alt="医学影像分割演示结果">
               <span><i></i> <b id="resultLabel">DEMO RESULT</b></span>
             </div>
             <div class="metrics">
-              <div><span id="metricLabel1">全肿瘤区域</span><b id="metricValue1">86.42 mL</b></div>
-              <div><span id="metricLabel2">肿瘤核心</span><b id="metricValue2">34.18 mL</b></div>
-              <div><span id="metricLabel3">增强区域</span><b id="metricValue3">12.76 mL</b></div>
+              <div><span id="metricLabel1">目标区域</span><b id="metricValue1">等待分析</b></div>
+              <div><span id="metricLabel2">分割体积</span><b id="metricValue2">等待分析</b></div>
+              <div><span id="metricLabel3">Dice</span><b id="metricValue3">等待分析</b></div>
             </div>
             <p class="demo-disclaimer">量化数值根据预测掩膜与参考标注计算，仅用于科研演示，不代表临床结论。</p>
             <button class="download-button" id="exportResult"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>下载演示结果</button>
@@ -133,6 +130,6 @@
   </main>
 
   <div class="toast" id="toast" role="status"><span>✓</span><div><b>操作完成</b><small>结果已更新</small></div></div>
-  <script src="./app.js?v=20261020-2"></script>
+  <script src="./app.js?v=20261020-3"></script>
 </body>
 </html>

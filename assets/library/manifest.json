@@ -1,28 +1,5 @@
 [
   {
-    "id": "brain-mri-001",
-    "title": "脑肿瘤 MRI · 样本 001",
-    "code": "BR · 001",
-    "category": "大脑",
-    "input": "./assets/library/brain-mri-001.png",
-    "thumbnail": "./assets/library/brain-mri-001.png",
-    "result": "./assets/demo-segmentation-result.webp",
-    "metrics": [
-      {
-        "label": "全肿瘤区域",
-        "value": "86.42 mL"
-      },
-      {
-        "label": "肿瘤核心",
-        "value": "34.18 mL"
-      },
-      {
-        "label": "增强区域",
-        "value": "12.76 mL"
-      }
-    ]
-  },
-  {
     "id": "heart-acdc-001",
     "title": "ACDC · 心脏样本 001",
     "code": "ACDC · HEART · 001",
