@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MedSeg · 网站二维码</title>
+  <meta name="description" content="MedSeg 医学影像智能分割平台访问二维码">
+  <style>
+    :root { color-scheme: dark; font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px; color: #edf7ff; background: radial-gradient(circle at 50% 15%, #174f65 0, #092633 32%, #04141d 68%, #020b11 100%); }
+    main { width: min(92vw, 560px); text-align: center; }
+    .eyebrow { color: #79e7ff; font-size: 12px; letter-spacing: .22em; }
+    h1 { margin: 12px 0 8px; font-size: clamp(30px, 7vw, 48px); font-weight: 650; }
+    p { margin: 0 0 24px; color: #a8c6d2; line-height: 1.7; }
+    .qr { display: block; width: min(78vw, 390px); margin: 0 auto; padding: 18px; border-radius: 24px; background: #fff; box-shadow: 0 30px 90px rgba(0,0,0,.38), 0 0 0 1px rgba(117,231,255,.18); }
+    .qr img { display: block; width: 100%; height: auto; }
+    .url { display: block; margin: 22px 0; color: #d9f7ff; font-size: 15px; word-break: break-all; }
+    .actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .actions a { min-width: 150px; padding: 13px 18px; border-radius: 999px; color: #03131b; background: #76e8ff; text-decoration: none; font-weight: 700; }
+    .actions a:last-child { color: #dff8ff; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); }
+    small { display: block; margin-top: 24px; color: #6f929f; }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="eyebrow">MEDSEG RESEARCH PLATFORM</span>
+    <h1>访问在线演示</h1>
+    <p>手机扫描二维码，或点击二维码直接打开网站。</p>
+    <a class="qr" href="https://zybj-medsegvision.work/" aria-label="打开 MedSeg 网站">
+      <img src="./assets/zybj-medsegvision-qr.svg" alt="MedSeg 网站二维码">
+    </a>
+    <a class="url" href="https://zybj-medsegvision.work/">https://zybj-medsegvision.work/</a>
+    <div class="actions">
+      <a href="https://zybj-medsegvision.work/">打开网站</a>
+      <a href="./assets/zybj-medsegvision-qr.svg" download="zybj-medsegvision-qr.svg">下载二维码</a>
+    </div>
+    <small>二维码由仓库内 SVG 代码直接渲染，不依赖第三方二维码网站。</small>
+  </main>
+</body>
+</html>
+
